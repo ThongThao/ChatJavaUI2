@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainChatController">
+   <left>
+      <HBox prefHeight="634.0" prefWidth="347.0" styleClass="gray-background" stylesheets="@../values/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="634.0" prefWidth="81.0" styleClass="dark-gray-background" stylesheets="@../values/style.css">
+               <children>
+                  <Pane prefHeight="194.0" prefWidth="80.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fx:id="avatarImageView" fitHeight="55.0" fitWidth="55.0" layoutX="13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="radius">
+                           <image>
+                              <Image url="@../images/user%20(2).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <ImageView fx:id="group" fitHeight="48.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/chat.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="48.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/team.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Pane prefHeight="200.0" prefWidth="200.0" />
+                  <ImageView fitHeight="48.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logout.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox prefHeight="634.0" prefWidth="268.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="39.0" prefWidth="226.0" stylesheets="@../values/style.css">
+                     <children>
+                        <ImageView fitHeight="26.0" fitWidth="31.0" opacity="0.46" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/search.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <TextField prefHeight="26.0" prefWidth="186.0" promptText="Search" stylesheets="@../values/style.css">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <styleClass>
+                              <String fx:value="radius" />
+                              <String fx:value="transparent-background" />
+                           </styleClass>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="dark-gray-background" />
+                        <String fx:value="radius" />
+                     </styleClass>
+                  </HBox>
+                  <Pane prefHeight="2.0" prefWidth="200.0" styleClass="dark-gray-background" />
+                  <HBox alignment="CENTER" prefHeight="58.0" prefWidth="266.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../group_24dp_7CA7D8_FILL0_wght400_GRAD0_opsz24.png" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="185.0">
+                           <children>
+                              <Label text="Group 1" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="58.0" prefWidth="266.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../group_24dp_7CA7D8_FILL0_wght400_GRAD0_opsz24.png" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="185.0">
+                           <children>
+                              <Label text="Group 2" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </left>
+   <center>
+      <VBox prefHeight="605.0" prefWidth="478.0" style="-fx-padding: 10;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="51.0" prefWidth="478.0" style="-fx-spacing: 0;">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="142.0" style="-fx-spacing: 10; -fx-padding: 5;">
+                     <children>
+                        <Label text="Group 1" textFill="#a6a3a3">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Circle centerX="10.0" fill="#1ee424" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Label text="Online" textFill="#8e8d8d" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="34.0" prefWidth="54.0">
+                     <children>
+                        <ImageView fitHeight="36.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../more_vert_24dp_666666_FILL0_wght400_GRAD0_opsz24.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <ScrollPane prefHeight="462.0" prefWidth="478.0" styleClass="gray-background" stylesheets="@../values/style.css">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="461.0" prefWidth="474.0" />
+               </content>
+            </ScrollPane>
+            <HBox alignment="CENTER_LEFT" prefHeight="19.0" prefWidth="478.0" style="-fx-padding: 5; -fx-spacing: 15;">
+               <children>
+                  <ImageView fitHeight="26.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../add_reaction_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="26.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../attach_file_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="27.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../mic_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="27.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../image_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="458.0" style="-fx-padding: 5; -fx-spacing: 8;">
+               <children>
+                  <TextField prefHeight="40.0" prefWidth="384.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="39.0" prefWidth="70.0" text="Send" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

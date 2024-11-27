@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProjectController">
+   <top>
+      <Pane prefHeight="224.0" prefWidth="600.0" styleClass="gray-background" stylesheets="@../values/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" layoutX="240.0" layoutY="25.0" prefHeight="175.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="avatarImageView" fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/user%20(2).png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane prefHeight="324.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="-3.0" layoutY="1.0" prefHeight="386.0" prefWidth="606.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="606.0">
+                     <children>
+                        <Label text="Họ &amp; Tên:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="70.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Pane prefHeight="36.0" prefWidth="298.0">
+                           <children>
+                              <Label fx:id="nameLabel" layoutX="84.0" layoutY="8.0" prefHeight="20.0" prefWidth="146.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </Pane>
+                        <Button alignment="CENTER_RIGHT" mnemonicParsing="false" text="Update" textAlignment="CENTER">
+                           <cursor>
+                              <Cursor fx:constant="S_RESIZE" />
+                           </cursor></Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="606.0">
+                     <children>
+                        <Label text="Số điện thoại:" textAlignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="1.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="70.0" />
+                           </padding>
+                        </Label>
+                        <Pane prefHeight="36.0" prefWidth="276.0">
+                           <children>
+                              <Label fx:id="phoneLabel" layoutX="84.0" layoutY="8.0" prefHeight="20.0" prefWidth="122.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </Pane>
+                        <Button mnemonicParsing="false" text="Update" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="606.0">
+                     <children>
+                        <Label text="Giới tính:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="71.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="70.0" />
+                           </padding>
+                        </Label>
+                        <Pane prefHeight="36.0" prefWidth="30.0" />
+                        <RadioButton fx:id="maleRadio" mnemonicParsing="false" text="Nam">
+                           <HBox.margin>
+                              <Insets left="-5.0" right="50.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="femaleRadio" mnemonicParsing="false" text="Nữ">
+                           <HBox.margin>
+                              <Insets right="129.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="606.0">
+                     <children>
+                        <Label text="Ngày sinh:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="105.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="70.0" />
+                           </padding>
+                        </Label>
+                        <DatePicker fx:id="birthDatePicker">
+                           <HBox.margin>
+                              <Insets left="-16.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="606.0">
+                     <children>
+                        <Label text="Password:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="66.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="70.0" />
+                           </padding>
+                        </Label>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <PasswordField fx:id="passwordField" layoutX="26.0" layoutY="5.0" prefHeight="25.0" prefWidth="175.0" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handleBackButtonAction" prefHeight="27.0" prefWidth="90.0" styleClass="gray-background" stylesheets="@../values/style.css" text="Back" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleSaveButtonAction" prefHeight="27.0" prefWidth="90.0" styleClass="gray-background" stylesheets="@../values/style.css" text="Save" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
